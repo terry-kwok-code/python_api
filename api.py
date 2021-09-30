@@ -8,7 +8,6 @@ default_headers = {"X-Risk-Token": DEFAULT_TOKEN,
 def get(url, headers=default_headers):
 
     response = requests.get(url, headers=headers)
-    # response = requests.get(url, params=queryparam, headers=headers, verify=False)
 
     return response
 
@@ -29,7 +28,7 @@ def put(url, payload, headers=default_headers):
 
 def delete(url, headers=default_headers):
 
-    response = requests.delete(url, headers=headers, verify=False)
+    response = requests.delete(url, headers=headers)
 
     return response
 
